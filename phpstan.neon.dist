@@ -1,0 +1,16 @@
+parameters:
+    level: 7
+    paths:
+        - app
+        - tests
+        - database/factories
+        - database/seeders
+    autoload_files:
+        - bootstrap/app.php
+        - vendor/autoload.php
+
+includes:
+    - vendor/nunomaduro/larastan/extension.neon
+
+checkMissingIterableValueType: false
+checkNullablesInAnnotations: true

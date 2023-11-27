@@ -1,0 +1,40 @@
+= Stiftung Documentation
+Stevan Vlajic
+1.0.0, {docdate}: Softwareentwicklung
+//:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
+:sourcedir: ../src/main/java
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+:toc: left
+:experimental:
+
+
+//Need this blank line after ifdef, don't know why...
+
+// print the toc here (not at the default position)
+//toc::[]
+
+== Notes by Julian (old)
+Models:
+- User: Kann sich anmelden
+- Participant: Kann "PVA, AmsAdvisor, Activity, EducationCategory und CompanyAdvisor" auswählen (foreign key)
+- CompanyAdvisor: Kann "Company" auswählen (foreign key)
+- Company: Hat mehrere "CompanyAdvisor"
+- AmsAdvisor: Kann "AmsRgs" auswählen (foreign key)
+- AmsRgs: Hat mehrere "AmsAdvisor"
+- PVA: Kann von "Participant" ausgewählt werden
+- Activity: Hat nur einen Namen, Kann von "Participant" ausgewählt werden
+- EducationCategory: Hat nur einen Namen, Kann von "Participant" ausgewählt werden
+
+Nicht beendet:
+- Participant: Formulare in Wizard-Step "Statistik" nicht richtig zugeordnet,
+Action fehlt bei Detailbutton bei der auflistung,
+Detailseite noch nicht fertig (Widgets, Berichte, etc.),
+
+- Company: Bei Relationmanager -> neu erstellen: vorausgewählte Company,
+
+- AmsRgs: Bei Relationmanager -> neu erstellen: vorausgewähltes AmsRgs,
+
+Notiz:
+Migrationen stimmen überein mit visualisierter Datenbank (dbdiagram)
+

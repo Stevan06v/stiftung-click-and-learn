@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Filament\Resources\NoteResource\Pages;
+
+use App\Filament\Resources\NoteResource;
+use Filament\Actions;
+use Filament\Resources\Pages\ViewRecord;
+use Filament\Forms\Concerns\InteractsWithForms;
+
+
+class ViewNote extends ViewRecord
+{
+
+
+    protected static string $resource = NoteResource::class;
+
+	protected function getActions(): array
+	{
+		return [
+			Actions\EditAction::make(),
+		];
+	}
+}

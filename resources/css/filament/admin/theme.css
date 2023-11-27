@@ -1,0 +1,8 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@config './tailwind.config.js';
+
+
+:root {
+	--f-primary-600: #339E8B;
+}
